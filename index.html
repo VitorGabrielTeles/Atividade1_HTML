@@ -7,12 +7,14 @@
 		<meta name="author" content="Generation Brasil">
 		<meta name="keywords" content="HTML, CSS, JavaScript">
 		<title>Meu Perfil</title>
+		<link rel="stylesheet" href="assets/css/style.css">
+		
 	</head>
 	<body>
 
 		<header>
 
-			<div id="header_content">
+			<div id="header_content" class="flex">
 
 				<div id="titulo">
 
@@ -21,7 +23,6 @@
 				</div>
 
 				<div id="menu">
-					<!-- Menu da Página -->
 					<nav>
 						<ul id="menu">
 							<li>
@@ -38,14 +39,14 @@
 
 		<main>
 
-			<section id="about">
+			<section id="about" class="flex_start">
 
 				<h2>Sobre mim</h2>
 
-				<div id="conteudo">
+				<div id="conteudo" class="flex">
 
-					<img
-						src="SelfieBalneario.jpg"
+					<img id="fotopessoal"
+						src="assets/img/SelfieBalneario.jpg"
 						alt="Foto do criador desse conteudo"
 					/>
 
@@ -59,14 +60,12 @@
 				</div>
 			</section>
 
-			<!-- Seção contendo um vídeo de sua preferência -->
-			<section id="video">
+			<section id="video" class="flex_start">
 				
-				<!-- Título da Seção -->
 				<h2>Meu vídeo favorito:</h2>
 
 				<!-- Vídeo da Seção -->
-				<div class="youtube">
+				<div class="flex">
 					<iframe
                         width="560"
                         height="315"
@@ -76,27 +75,25 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin"
                         allowfullscreen
-                        ></iframe>
+                    ></iframe>
 				</div>
 
 			</section>
 
 		</main>
 
-		<!-- Rodapé da Página (footer) -->
-		<footer>
+		<footer class="flex">
 
-			<!-- Seção de Contato - Redes Sociais-->
             <section id="redes_sociais">
 
                     <a href="www.linkedin.com/in/vitor-gabriel-teles-">
-                        <img src="social.png" alt="LinkedIn"
+                        <img src="assets/img/social.png" alt="LinkedIn"
                     </a>
                     <a href="https://github.com/VitorGabrielTeles">
-                        <img src="github.png.png" alt="Github" />
+                        <img src="assets/img/github.png.png" alt="Github" />
                     </a>
                     <a href="https://www.instagram.com/vitoor_teles">
-                        <img src="instagram.png" alt="Instagram" />
+                        <img src="assets/img/instagram.png" alt="Instagram" />
                     </a>
 
             </section>
