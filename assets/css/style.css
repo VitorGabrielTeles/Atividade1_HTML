@@ -39,7 +39,7 @@ h1{
 
 h2{
     padding: 1rem;
-    color: var(--black-800);
+    color: var(--white);
     font-size: 1.5rem;
     font-weight: 600;
     text-align: left;
@@ -73,37 +73,44 @@ p{
 }
 
 #fotopessoal{
-    width: 200px;
+    width: 300px;
     height: auto;
+    border-radius: 50%;
+    object-fit: cover;
 
 }
 
+
 #header_content {
-    height: 80px;
-    position: sticky; 
-    top: 0; 
-    width: 100%; 
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    width: 100%;
     padding: 24px;
     background-color: var(--purple-800);
     border-bottom: 1px solid var(--purple-500);
 }
 
-#menu li {
-    display: inline;
-    padding: 1rem;
+#menu nav ul {
+    display: flex;
+    list-style: none;
+    gap: 24px; /* espaçamento entre os links */
 }
 
-#menu li a {
+#menu nav ul li a {
+    color: white;
     text-decoration: none;
-    color: var(--white);
-    font-size: 20px;
+    font-weight: bold;
 }
 
 #menu li a:hover {
     color: var(--purple-200);
     text-decoration: underline;
 }
+
 
 #about{
     flex-direction: column;
